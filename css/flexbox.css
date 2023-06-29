@@ -1,0 +1,27 @@
+.flex-container {
+    display: flex;          /* Uses 100% width */
+}
+
+.flex-container-inline {
+    display: inline-flex;   /* Adjusts width to content */
+}
+
+.flex-container-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-container-column {
+    flex-direction: column;
+}
+
+.flex-container-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-container-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-container-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}

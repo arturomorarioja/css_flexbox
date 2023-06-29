@@ -1,0 +1,72 @@
+:root {
+    --colorMain: black;
+    --colorSecondary: floralwhite;
+    --colorBgMain: white;
+    --colorBgSecondary: navy;
+    --colorBgTertiary: royalblue;
+
+    --fontMain: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontMain);
+}
+
+header, footer {
+    color: var(--colorSecondary);
+    background-color: var(--colorBgSecondary);
+    padding: 1rem;
+}
+nav {
+    top: 0;
+    border-bottom: thin solid var(--colorSecondary);
+    padding: 0.5rem 1rem;
+    background-color: var(--colorSecondary);
+}
+nav > ul > li{
+    display: block;
+    text-align: center;
+}
+@media (min-width: 700px) {
+    nav > ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    nav > ul > li {
+        list-style-type: none;
+        padding: 0 1rem;
+    }
+}
+
+section > header {
+    padding: 0.5rem;
+    background-color: var(--colorBgTertiary);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.4rem;
+    text-align: center;
+}
+aside#filler {
+    height: 2rem;
+}
+
+div {
+    border: thin solid var(--colorMain);
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--colorBgSecondary)
+}

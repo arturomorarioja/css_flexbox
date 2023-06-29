@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/flexbox2.css">
+    <link rel="stylesheet" href="css/flexbox3.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" alt="Example 1">Example 1</a></li>
+            <li><a href="index2.htm" alt="Example 2">Example 2</a></li>
+            <li><a href="index3.htm" alt="Example 3">Example 3</a></li>
+            <li><a href="index4.htm" alt="Example 4">Example 4</a></li>
+            <li><a href="index5.htm" alt="Example 5">Example 5</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>CSS Flexbox. Example 4 - Item Arrangement: different values</h1>
+    </header>
+    <main>        
+        <section>
+            <header>Items 1 & 3 flex: 1 0 200px, item 2 flex: 3 0 200px</header>
+            <div class="flex-container">
+                <div class="flex-grow">flex item</div>
+                <div class="flex-grow-2">flex item</div>
+                <div class="flex-grow">flex item</div>
+            </div>
+        </section>
+        <section>
+            <header>Items 1 & 3 flex: 0 1 200px, item 2 flex: 0 3 200px</header>
+            <div class="flex-container">
+                <div class="flex-shrink">flex item</div>
+                <div class="flex-shrink-2">flex item</div>
+                <div class="flex-shrink">flex item</div>
+            </div>
+        </section>
+        <section>
+            <header>Items 1 & 3 flex: 1 0 200px, item 2 flex: 3 0 200px</header>
+            <div class="flex-container">
+                <div class="flex-grow">flex item with a very long text in comparison to the others</div>
+                <div class="flex-grow-2">flex item with a longer text</div>
+                <div class="flex-grow">flex item</div>
+            </div>
+        </section>
+        <section>
+            <header>Items 1 & 3 flex: 0 1 200px, item 2 flex: 0 3 200px</header>
+            <div class="flex-container">
+                <div class="flex-shrink">flex item with a very long text in comparison to the others</div>
+                <div class="flex-shrink-2">flex item with a longer text</div>
+                <div class="flex-shrink">flex item</div>
+            </div>
+        </section>
+        <aside id="filler"></aside>
+    </main>
+    <footer>
+        <p>&copy; 2022 Arturo Mora-Rioja</p>
+    </footer>
+</body>
+</html>

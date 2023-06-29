@@ -1,0 +1,7 @@
+.flex-grow-2 {
+    flex: 3 0 200px;    /* The higher the -grow value, the more space the item takes */
+}
+
+.flex-shrink-2 {
+    flex: 0 3 200px;    /* The higher the -shrink value, the less space the item takes */
+}
