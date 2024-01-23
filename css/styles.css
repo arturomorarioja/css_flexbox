@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
 :root {
     --colorMain: black;
     --colorSecondary: floralwhite;
@@ -5,7 +7,7 @@
     --colorBgSecondary: navy;
     --colorBgTertiary: royalblue;
 
-    --fontMain: Arial, Helvetica, sans-serif;
+    --fontMain: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -33,6 +35,9 @@ nav > ul > li{
     text-align: center;
 }
 @media (min-width: 700px) {
+    nav {
+        position: sticky;
+    }
     nav > ul {
         display: flex;
         flex-flow: row wrap;
