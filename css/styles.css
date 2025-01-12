@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
-
 :root {
     --colorMain: black;
     --colorSecondary: floralwhite;
@@ -13,65 +12,67 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: var(--fontMain);
-}
 
-header, footer {
-    color: var(--colorSecondary);
-    background-color: var(--colorBgSecondary);
-    padding: 1rem;
-}
-nav {
-    top: 0;
-    border-bottom: thin solid var(--colorSecondary);
-    padding: 0.5rem 1rem;
-    background-color: var(--colorSecondary);
-}
-nav > ul > li{
-    display: block;
-    text-align: center;
-}
-@media (min-width: 700px) {
+    header, footer {
+        color: var(--colorSecondary);
+        background-color: var(--colorBgSecondary);
+        padding: 1rem;
+    }
+
     nav {
-        position: sticky;
+        top: 0;
+        border-bottom: thin solid var(--colorSecondary);
+        padding: 0.5rem 1rem;
+        background-color: var(--colorSecondary);
+        > ul > li{
+            display: block;
+            text-align: center;
+        }
+        @media (min-width: 700px) {
+            position: sticky;
+            > ul {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                > li {
+                    list-style-type: none;
+                    padding: 0 1rem;
+                }
+            }
+        }
     }
-    nav > ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+    
+    section > header {
+        padding: 0.5rem;
+        background-color: var(--colorBgTertiary);
     }
-    nav > ul > li {
-        list-style-type: none;
-        padding: 0 1rem;
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0.4rem;
+        text-align: center;
     }
-}
-
-section > header {
-    padding: 0.5rem;
-    background-color: var(--colorBgTertiary);
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0.4rem;
-    text-align: center;
-}
-aside#filler {
-    height: 2rem;
-}
-
-div {
-    border: thin solid var(--colorMain);
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--colorBgSecondary)
+    
+    aside#filler {
+        height: 2rem;
+    }
+    
+    div {
+        border: thin solid var(--colorMain);
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--colorBgSecondary)
+    }
 }
